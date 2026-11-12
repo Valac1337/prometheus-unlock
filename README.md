@@ -74,6 +74,26 @@ See [INSTALL.md](INSTALL.md) for detailed setup, manual dependencies, script opt
 - Displays the latest boot result.
 - Provides tested-entry registration, automatic USB startup, and Windows-first recovery through the **Automatic startup** tab. See [automatic startup instructions](AUTOMATIC-STARTUP.md).
 
+## GUI screenshots
+
+Actual application screenshots in a documentation preview with hardware scanning disabled. No personal hardware identifiers, local paths or boot logs are shown.
+
+### Prepare and build
+
+![Numbered USB preparation, capture, validation and build workflow](docs/images/gui-workflow.jpg)
+
+### GPU compatibility
+
+![Searchable GPU catalog distinguishing automatic candidates from other support levels](docs/images/gui-compatibility.jpg)
+
+### Step-by-step guide
+
+![Built-in installation and two-capture setup guide](docs/images/gui-guide.jpg)
+
+### Automatic startup and recovery
+
+![USB startup registration, enablement and Windows-first recovery controls](docs/images/gui-startup.jpg)
+
 ## GPU coverage
 
 The GUI has 35 searchable catalog entries, including additional Turing, Ampere and Ada models and an unsupported RTX 50-series entry. Informational entries do not enable unlocking. Only the seven exact PCI IDs below enter automatic profile validation.

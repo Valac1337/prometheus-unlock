@@ -7,8 +7,8 @@ import re
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-# Reviewed PNG export contains only image/color/dimension chunks, no personal metadata.
-PUBLIC_IMAGES = {'docs/images/prometheus-logo.png': '692e6cd4f436eed824084be568a2e5b2c131b83a7ee90af6656db845981e662f'}
+# Reviewed logo and GUI screenshots contain no personal content or EXIF/XMP metadata.
+PUBLIC_IMAGES = {'docs/images/prometheus-logo.png': '692e6cd4f436eed824084be568a2e5b2c131b83a7ee90af6656db845981e662f', 'docs/images/gui-compatibility.jpg': '714080093e058f6ce83408abe79a42a684b1c00489030598898a43bbede2a371', 'docs/images/gui-guide.jpg': '75fc830e5180137628e39a384af3de6680c2e311d9ee0dfa59e7ebc79fc9751a', 'docs/images/gui-startup.jpg': '95b7f84c6b45585edd9b5133335251235ca5531eae8cfac9bf10336f5e610b32', 'docs/images/gui-workflow.jpg': '57ccda8f3a973170adf12e747450ccb2f62d3821ad5d157bf2d4b2f87753a84f'}
 PRIVATE_DIRECTORIES = ('research/profile/local/', 'assets/', 'local-tools/', 'firmware-inputs/',
                        'firmware-source/', 'dist/', '.git/', '__pycache__/')
 PRIVATE_NAMES = {'profile-local.h', 'platform-config.h', 'generated.h', '.gui.lock', 'REPORT.TXT'}

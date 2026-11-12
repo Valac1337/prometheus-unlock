@@ -101,8 +101,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8048,
-      "sha256": "31df1521720e0f17c445690628a6fd25d3eb0981a31a929d1182541fc7119030"
+      "bytes": 8766,
+      "sha256": "0f96d7e030bda8ec1d6eb4b7bd669811aaa2772fc0fbd089d85bd0aa81407f41"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -126,8 +126,8 @@
     },
     {
       "path": "SOURCE-FILES.json",
-      "bytes": 58912,
-      "sha256": "f37acaf4c8864bd3b740efcd5417f8c2e54f49755a129fb347ff81935780d95e"
+      "bytes": 59053,
+      "sha256": "64f9dccc25560274de80d6401115d68cbe3823a6f451fac97a491962ad7c838c"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -3855,6 +3855,26 @@
       "sha256": "856810403505169618b1ebc3e0ac8dba11c4009a8e85b39f78c4c68dacdb1ff9"
     },
     {
+      "path": "docs/images/gui-compatibility.jpg",
+      "bytes": 142334,
+      "sha256": "714080093e058f6ce83408abe79a42a684b1c00489030598898a43bbede2a371"
+    },
+    {
+      "path": "docs/images/gui-guide.jpg",
+      "bytes": 242936,
+      "sha256": "75fc830e5180137628e39a384af3de6680c2e311d9ee0dfa59e7ebc79fc9751a"
+    },
+    {
+      "path": "docs/images/gui-startup.jpg",
+      "bytes": 97942,
+      "sha256": "95b7f84c6b45585edd9b5133335251235ca5531eae8cfac9bf10336f5e610b32"
+    },
+    {
+      "path": "docs/images/gui-workflow.jpg",
+      "bytes": 90159,
+      "sha256": "57ccda8f3a973170adf12e747450ccb2f62d3821ad5d157bf2d4b2f87753a84f"
+    },
+    {
       "path": "docs/images/prometheus-logo.png",
       "bytes": 372219,
       "sha256": "692e6cd4f436eed824084be568a2e5b2c131b83a7ee90af6656db845981e662f"
@@ -4066,8 +4086,8 @@
     },
     {
       "path": "gui/release_check.py",
-      "bytes": 4010,
-      "sha256": "6c4819b00ad7b2b8d1a35342937f8241781d235be2ee96a847a23ece16ee7f05"
+      "bytes": 4409,
+      "sha256": "718fde4b14cd219f0afeb48f2ac9616807200e5855141fcaca63b8bc0441b25e"
     },
     {
       "path": "gui/setup.py",
