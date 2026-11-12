@@ -1,0 +1,28 @@
+name: GUI or installer bug
+description: Report a reproducible issue with Prometheus Unlock.
+body:
+  - type: markdown
+    attributes:
+      value: "Share sanitized text only. Keep raw captures, firmware, serial numbers, recovery keys and personal paths private."
+  - type: input
+    id: version
+    attributes:
+      label: Prometheus Unlock version or commit
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and sanitized error
+    validations:
+      required: true

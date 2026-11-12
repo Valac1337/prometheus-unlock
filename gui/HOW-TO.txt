@@ -1,0 +1,42 @@
+PROMETHEUS UNLOCK — BEFORE YOU START
+
+This is an experimental GPU firmware unlock. A successful build and passing host tests still require a supervised hardware test. GPU support depends on the exact PCI ID, VBIOS, motherboard firmware and display ownership layout.
+
+Run Install Prometheus Unlock.cmd first. It checks Python 3.14 with Tcl/Tk, 7-Zip and Visual Studio C++ Build Tools, offers to install missing dependencies through Windows Package Manager, and prepares the compiler and firmware inputs. See INSTALL.md for manual alternatives and troubleshooting. Use Windows x64 and allow several GB of local storage. Keep the source folder on a local drive. Run Launch Prometheus Unlock.cmd for normal use. If formatting or inventory needs administrator access, close the GUI and launch it from an administrator terminal.
+
+Check System Information for Secure Boot State and Manage BitLocker for the Windows drive. The current unsigned boot workflow needs Secure Boot off and a fully decrypted Windows system drive. Those changes are manual. Store any recovery key privately. Use a spare USB partition of 1–32 GB. Formatting erases that selected volume.
+
+PREPARE THE USB
+
+1. Refresh hardware and select the intended USB. Read its drive letter, model, size and filesystem.
+2. Click Download build inputs. The tool downloads LLVM 20.1.8 and NVIDIA 610.43.03 inputs. It extracts firmware without executing the NVIDIA installer and verifies all five output hashes. Existing Windows display drivers stay in use.
+3. If necessary, click Format USB and type the requested confirmation. A drive already formatted as FAT32 can be used directly. Formatting requires administrator rights. Partitions above 32 GB are refused by this formatting action. Use a smaller spare USB or prepare an appropriately sized FAT32 partition yourself.
+4. Click Prepare capture USB. Existing capture files and the prior USB loader are archived. This builds the observation-only UEFI program and copies it to EFI/BOOT/BOOTX64.EFI. It also records the current Windows EFI partition for the return to Windows.
+
+COLLECT TWO CAPTURES
+
+5. Save your work. In a terminal, run shutdown /s /t 0 for a full shutdown.
+6. Leave one monitor connected to the target NVIDIA GPU. Physically disconnect extra display cables for the initial setup. Keep the same monitor and GPU port throughout both captures and the first unlock test.
+7. Power on and choose the USB UEFI entry from your motherboard's one-time boot menu. ASUS desktop boards commonly use F8; consult your board manual. Avoid changing the default boot order.
+8. Let the capture program return to Windows. Repeat the full shutdown and USB boot once more. Two complete captures from separate cold boots are needed.
+9. Reopen the GUI, refresh hardware and select the USB. Click Check two captures. A candidate result permits profile generation and further testing. Read refusal reasons if it stops. If changing monitor layout, use Prepare capture USB again to archive the old set before collecting a new pair.
+
+BUILD AND TEST THE UNLOCK
+
+10. Click Validate and build. The existing port generates your local profile, parses your VBIOS, verifies firmware assets, runs every required host test and builds the USB wrapper and unlock program. This can take several minutes. Expected negative tests can print FAIL while their job passes because rejection was expected. The final command must succeed.
+11. Only after the build succeeds, click Write unlock to USB and read the confirmation. This replaces the capture loader. Booting the USB now attempts the actual unlock. The source and input checks remain enforced by the port.
+12. Save work, fully shut down, and select the USB through the one-time boot menu. Use the captured display configuration. Let it proceed without pressing keys. The initial five-second Esc window skips the unlock and starts Windows. A later three-second Esc window occurs after display release and stops the process rather than returning to Windows.
+13. The screen may go black during GPU release. Windows should start after the attempt. If it remains stuck, fully power off, remove the USB, and boot Windows normally. Avoid repeating attempts in the same power session.
+14. Back in Windows, select the USB and click Read latest boot result. A FINAL status=0 with clean=1 reports a successful transaction and cleanup. Confirm Windows returned during that same attempt. Saved logs alone cannot establish current unlock status. Compare an identical CUDA workload before and after for performance evidence.
+
+AFTERWARD
+
+The Automatic startup tab offers a USB boot entry, a test-before-enable workflow, and Restore Windows first. It can reapply the unlock on cold startup while the USB stays connected. See AUTOMATIC-STARTUP.md for setup, boot-setting changes and recovery. Internal-drive installation, three-monitor boot support and sleep/resume persistence remain outside this option's validated scope.
+
+Keep the USB workflow manual while testing. Restart, sleep, hibernation, driver resets and full power-off may change or clear unlock state. Reconnecting extra monitors after Windows starts is a separate test. Boot-time use with those monitors may be refused by the captured profile. Rebuild after relevant hardware or firmware changes.
+
+The port's GPU compatibility guide describes fixed profiles, reported setups and limitations. This GUI automates the local-profile path for the exact IDs listed in its compatibility tab. It cannot turn an unsupported card or topology into a supported one.
+
+SHARING
+
+Share the clean source distribution produced by gui/package.py. Keep your captures, VBIOS, local profile, generated EFI programs, firmware assets and machine-specific partition identifiers private. Other users must generate their own profile and build. Firmware downloads retain NVIDIA's license in assets/NVIDIA-LICENSE.

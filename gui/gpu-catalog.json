@@ -1,0 +1,179 @@
+{
+  "format": 1,
+  "sources": [
+    "https://github.com/Zagitta/gpu-unlock",
+    "docs/COMPATIBILITY.en.md",
+    "research/profile/proven.json"
+  ],
+  "additional_entries": [
+    {
+      "model": "RTX 2060",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2060 SUPER",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2070",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2070 SUPER",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2080",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2080 SUPER",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 2080 Ti",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "Titan RTX",
+      "family": "Turing",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 3050",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3060 Ti (other PCI IDs)",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3080 10GB",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3080 Ti",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3070 Laptop",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3080 Laptop",
+      "family": "Ampere",
+      "status": "Outside automatic route",
+      "detail": "The Windows local-profile generator does not admit this entry. Model names cannot substitute for exact PCI and firmware checks."
+    },
+    {
+      "model": "RTX 3070 Ti",
+      "family": "GA104",
+      "pci": "2482",
+      "status": "Fixed upstream profile",
+      "detail": "MSI card, subsystem 1462:5052, ASUS TUF GAMING B660M-E D4 BIOS 4003. See docs/COMPATIBILITY.en.md. Automatic local generation is unavailable."
+    },
+    {
+      "model": "RTX 4060",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4060 Ti",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4070",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4070 SUPER",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4070 Ti",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4070 Ti SUPER",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4080",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4080 SUPER",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4090",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4090 D",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4050 Laptop",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 4060 Laptop",
+      "family": "Ada",
+      "status": "Linux source only",
+      "detail": "Listed by the Linux project; this Windows automatic workflow has no profile for this GPU."
+    },
+    {
+      "model": "RTX 50 series",
+      "family": "Blackwell",
+      "status": "Unsupported",
+      "detail": "Outside the supplied Linux and Windows unlock implementations."
+    }
+  ]
+}

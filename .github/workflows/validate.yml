@@ -1,0 +1,29 @@
+name: Validate public source
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Audit release files
+        run: python gui/release_check.py
+      - name: GUI and download regression tests
+        run: python -m unittest discover -s gui -p "test_*.py" -v
+      - name: Upstream public tool tests
+        run: python -m unittest discover -s tools -p "test_*.py" -v
+      - name: Upstream profile tests
+        run: python -m unittest discover -s research/profile -p "test_*.py" -v
+      - name: Startup and installer simulations
+        shell: powershell
+        run: |
+          powershell.exe -NoProfile -File .\gui\test-startup.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          powershell.exe -NoProfile -File .\gui\test-installer.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Build source archive
+        run: python gui/package.py
