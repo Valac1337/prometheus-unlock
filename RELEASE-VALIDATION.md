@@ -22,3 +22,9 @@ Fresh-machine dependency installation, automatic firmware boot selection and add
 SOURCE-FILES.json is the public allowlist. The release audit rejects private generated files, recognized credentials and personal Windows home paths. Original public upstream attribution, compatibility evidence and synthetic privacy-test examples are retained. Automated scanning is a safeguard, not proof that arbitrary future edits contain no sensitive information.
 
 SOURCE-MANIFEST.json records SHA-256 hashes of the public files other than itself. Packages contain only audited source. Machine captures, generated profiles, firmware downloads, EFI binaries and startup state are excluded. Never upload the entire working folder or raw diagnostic captures.
+
+## Windows EXE package (2026-11-16)
+
+Version 0.2.0 adds unsigned x64 .NET Framework launchers, Setup.exe and PrometheusUnlock.exe, with the complete audited source payload. Python and the build prerequisites remain external dependencies; the installer guides their installation.
+
+Both compiled launchers passed payload checks and opened/closed the real GUI from a fresh ZIP extraction in a path containing spaces, an apostrophe and an ampersand. An isolated launcher correctly rejected missing support files. GUI smoke tests disable hardware discovery and backend actions; no USB writes or boot-setting changes occurred. The 13 GUI/download/privacy regression tests passed locally. Fresh-machine installation and physical GPU validation remain subject to the limits above.

@@ -27,3 +27,11 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Build source archive
         run: python gui/package.py
+      - name: Build Windows launchers
+        shell: powershell
+        run: ./gui/build-desktop.ps1
+      - name: Package Windows download
+        run: python gui/package-desktop.py
+      - name: Test extracted EXE package
+        shell: powershell
+        run: ./gui/test-desktop.ps1

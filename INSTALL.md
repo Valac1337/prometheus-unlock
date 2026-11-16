@@ -1,5 +1,9 @@
 # Install and use Prometheus Unlock
 
+## Windows executable package
+
+For the Windows ZIP release, extract all files and use **Setup.exe** in place of **Install Prometheus Unlock.cmd**. Use **PrometheusUnlock.exe** in place of **Launch Prometheus Unlock.cmd**. All steps below still apply. These are compiled launchers for the supplied scripts, not a self-contained Python runtime; moving the EXEs alone will not work. See [WINDOWS-DOWNLOAD.txt](WINDOWS-DOWNLOAD.txt) for requirements, unsigned-publisher guidance and checksums.
+
 ## 1. Prepare Windows
 
 Use an x64 Windows PC with an eligible NVIDIA GPU, internet access and several GB of free storage. Visual Studio may require additional space beyond that for the project and firmware. Use a spare USB with a FAT32 volume of 1–32 GB. USB formatting erases all files on the selected volume.

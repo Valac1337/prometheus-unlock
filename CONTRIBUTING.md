@@ -29,3 +29,7 @@ Add intended public files to `SOURCE-FILES.json`. Keep captures, raw logs, PROM/
 Review every diff before committing. Automated scanning catches common patterns and generated artifacts but cannot identify every type of sensitive information. Existing upstream author credits and synthetic privacy-test fixtures are retained intentionally.
 
 Use the bug-report template for GUI/install problems and the compatibility template for reviewed hardware metadata. Share minimal sanitized summaries. Preserve detailed diagnostic files privately.
+
+## Windows executable package
+
+The C# launchers use the Windows .NET Framework compiler. After source validation, run `gui/build-desktop.ps1`, `python gui/package.py`, `python gui/package-desktop.py`, then `gui/test-desktop.ps1`. The last step extracts the complete ZIP and opens the real GUI without hardware discovery or backend actions. Generated binaries remain outside the public source allowlist; the Windows packager adds exactly the two reviewed launcher executables.

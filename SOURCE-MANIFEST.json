@@ -21,8 +21,8 @@
     },
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 1099,
-      "sha256": "fafd6841a836ee814d5ba4d6f6de93fc367e5e07cbb905a9df95e31be715034c"
+      "bytes": 1422,
+      "sha256": "fc50d595de7766845c654a03deeec1cc00b1eaafd66b73855c4e76da8c70f5be"
     },
     {
       "path": ".gitignore",
@@ -41,13 +41,13 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2090,
-      "sha256": "89cea67bdb2586d948598a245911502e499e56d05ee1a0a23a1e57d5ff762f97"
+      "bytes": 2602,
+      "sha256": "7ae45121cd556a558d7075af02e66a2e7c05faf49e9af5708a9923344480728f"
     },
     {
       "path": "INSTALL.md",
-      "bytes": 9626,
-      "sha256": "e5653552dd1c5d734660a05983cb4dbcf1e661ade84ed6f6934f265e0024460a"
+      "bytes": 10234,
+      "sha256": "7e77ef03f6b8d2261cdac5d9ac084fc455961e94bbdfabdb02d23a4c34c580b0"
     },
     {
       "path": "Install Prometheus Unlock.cmd",
@@ -101,8 +101,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8766,
-      "sha256": "0f96d7e030bda8ec1d6eb4b7bd669811aaa2772fc0fbd089d85bd0aa81407f41"
+      "bytes": 9483,
+      "sha256": "9a1ed7623e32fda98d402a48ec82fe7441bdfe201d7e5562def188c65b93fbd6"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -111,8 +111,8 @@
     },
     {
       "path": "RELEASE-VALIDATION.md",
-      "bytes": 2470,
-      "sha256": "02ca6dc21c98091522a50cae3e8f7da630318007736678ad6e6bcddf18c68ed7"
+      "bytes": 3250,
+      "sha256": "5f6d40fb1ef3027412b51c312c92166b5e15a055df64e2e38be57b70fb0506c8"
     },
     {
       "path": "RELEASE-v0.2.0.md",
@@ -126,8 +126,8 @@
     },
     {
       "path": "SOURCE-FILES.json",
-      "bytes": 59053,
-      "sha256": "64f9dccc25560274de80d6401115d68cbe3823a6f451fac97a491962ad7c838c"
+      "bytes": 59239,
+      "sha256": "29dd840848b62bacca6b7c0f4d76361f9fdfdb1ba0c4fd790b09d58441d7dd2d"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -138,6 +138,11 @@
       "path": "UPSTREAM-README.md",
       "bytes": 16710,
       "sha256": "2d7952f6755cb405994a7886041235fda327c186ff249c3b9c5e18f424ddec16"
+    },
+    {
+      "path": "WINDOWS-DOWNLOAD.txt",
+      "bytes": 2252,
+      "sha256": "4e3a16804722396bb42558e127bcb5df4b36b70a0f3f68a32545dac7cc1ceb90"
     },
     {
       "path": "benchmark/build.ps1",
@@ -4070,9 +4075,29 @@
       "sha256": "587ef5d3f58b988a242c1023026bf8c3a7a1f9744ee60f666fc7e27a49031778"
     },
     {
+      "path": "gui/build-desktop.ps1",
+      "bytes": 984,
+      "sha256": "5eb4565838fdab7dedeed40fa25932a0ff1d29cfd3ac50976aa17408bf64a14c"
+    },
+    {
+      "path": "gui/desktop-launcher.cs",
+      "bytes": 2541,
+      "sha256": "9651c02ba3f82862dbd88cab7e650ab368262d0762abe4a3a499ebbbcfb4fd7a"
+    },
+    {
+      "path": "gui/desktop.ps1",
+      "bytes": 1002,
+      "sha256": "06dd99bcd35d27e503cb0f4752e67ee5e25bd1b1d8820419b4355acedf581565"
+    },
+    {
       "path": "gui/gpu-catalog.json",
       "bytes": 6656,
       "sha256": "685dff9465b206827d84d0f56eb19ccb5b85c07f10e82dd99f97d842a72fb595"
+    },
+    {
+      "path": "gui/package-desktop.py",
+      "bytes": 1596,
+      "sha256": "ace59a0ef2bdeb222e3a246979ee75ab7fc60a8ed52eb5d8b0351464df09d571"
     },
     {
       "path": "gui/package.py",
@@ -4095,9 +4120,19 @@
       "sha256": "56bc88416e03cdbb33c9c48b257bdf46e4e68e06c2e6b56cff7482a2baf25012"
     },
     {
+      "path": "gui/smoke-gui.py",
+      "bytes": 504,
+      "sha256": "e6b61c0de8303b530ffa0ad98cf3e84ebe200f4ae0c3e0a7e2790c853a0a0b5d"
+    },
+    {
       "path": "gui/startup.ps1",
       "bytes": 15203,
       "sha256": "fa7e91327ddba6197b37d8024f554bf32d4e496bbd324d5960b4622ca6242924"
+    },
+    {
+      "path": "gui/test-desktop.ps1",
+      "bytes": 1553,
+      "sha256": "e5b161b6a7795ed8a9c5801665ced1d4de52e3d8d01deef610f07674e05c7011"
     },
     {
       "path": "gui/test-installer.ps1",

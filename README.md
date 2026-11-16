@@ -6,6 +6,12 @@
 
 A Windows desktop assistant for building an experimental NVIDIA GPU unlock USB for your own hardware. Based on Windows-GPU-UNLOCK commit `c6bc2b31eedeedd6c36e8dbaed50359a757335d3`, with original source, licensing and documentation included.
 
+## Windows EXE download
+
+Download **Prometheus-Unlock-Windows-x64.zip** from the [latest releases](https://github.com/Valac1337/prometheus-unlock/releases). Extract the **entire** archive, run **Setup.exe** once, then use **PrometheusUnlock.exe** to open the GUI. Right-click the GUI EXE and choose **Run as administrator** when formatting a USB or changing boot entries.
+
+The EXEs launch the included setup and GUI workflow; they require the accompanying files and installed Python 3.14. Setup helps install the dependencies. They are unsigned, and Windows may display a publisher warning. See [Windows download details](WINDOWS-DOWNLOAD.txt) and compare your download against the release's `SHA256SUMS.txt`.
+
 ## Step-by-step installation and setup
 
 ### 1. Download and extract

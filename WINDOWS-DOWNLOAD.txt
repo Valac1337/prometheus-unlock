@@ -1,0 +1,36 @@
+PROMETHEUS UNLOCK - WINDOWS x64 - v0.2.0 EXPERIMENTAL
+
+1. Download Prometheus-Unlock-Windows-x64.zip from the official release page:
+   https://github.com/Valac1337/prometheus-unlock/releases
+2. Extract the ENTIRE ZIP to a writable local folder. Do not run from inside
+   the ZIP. Keep Setup.exe and PrometheusUnlock.exe with all included folders.
+3. Run Setup.exe. It checks Python 3.14 with Tcl/Tk, 7-Zip and Visual Studio
+   C++ Build Tools, offers dependency installation, and prepares verified
+   compiler/firmware inputs. Internet access and several GB of storage are
+   required. Complete any installer-requested restart, then rerun setup.
+4. Run PrometheusUnlock.exe for normal use. The GUI requires installed Python;
+   these compiled launchers are not a bundled Python runtime or a standalone
+   GPU unlock binary. A console window during setup is expected.
+5. Follow INSTALL.md for USB preparation, two cold captures, validation,
+   staging, the first supervised unlock boot, verification and recovery.
+6. For USB formatting or boot-entry changes, close the GUI and right-click
+   PrometheusUnlock.exe, then choose Run as administrator.
+
+These binaries are unsigned. Windows may display an unknown-publisher or
+SmartScreen warning. Verify the download source and the published SHA-256;
+if your device or organization blocks it, use its approved review process.
+
+Requirements: x64 Windows with .NET Framework 4.x, eligible NVIDIA hardware,
+Python 3.14 with Tcl/Tk, 7-Zip, MSVC C++ tools and a Windows SDK.
+Setup guides dependency installation; fresh-machine installation has not
+been validated for every Windows configuration.
+
+The 35-entry GPU catalog includes informational models. Only seven exact
+PCI IDs are candidates for automatic validation. Firmware and topology must
+also pass. Host tests and an EXE launch do not guarantee a successful unlock.
+The unlock is volatile. Automatic USB startup reapplies it; it is not permanent.
+
+Firmware downloads, personal captures, profiles and EFI binaries are not
+included. Each user must build for their own machine. Upstream licenses and
+attribution are included. Launcher source is gui/desktop-launcher.cs; build
+with gui/build-desktop.ps1. See README.md, INSTALL.md and AUTOMATIC-STARTUP.md.
